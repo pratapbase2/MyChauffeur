@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/dffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/logo"
+            android:id="@+id/imageic"/>
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#1e3e66"
+            android:layout_below="@+id/imageic"
+            android:layout_marginTop="10dp"
+            android:id="@+id/disclaimer_text"
+            android:text="Please enter a valid email address to verify your account . You will recieve an  OTP Verification Code by email  to verify your account. Thank you." />
+
+
+        <com.mychauffeurapp.model.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disclaimer_text"
+            android:layout_marginTop="15dp"
+            android:textCursorDrawable="@null"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textSize="20sp"
+            android:textColorHint="#1e3e66"
+            android:textColor="#1e3e66"
+            android:id="@+id/name" />
+
+        <com.mychauffeurapp.model.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="15dp"
+            android:textCursorDrawable="@null"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:textColor="#1e3e66"
+            android:textColorHint="#1e3e66"
+            android:id="@+id/email_id" />
+
+        <com.mychauffeurapp.model.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/email_id"
+            android:hint="Mobile Number"
+            android:textSize="20sp"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:textColor="#1e3e66"
+            android:textColorHint="#1e3e66"
+            android:textCursorDrawable="@null"
+            android:id="@+id/phone_number" />
+
+        <com.mychauffeurapp.model.MyEditTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/phone_number"
+            android:hint="Password"
+            android:textColorHint="#1e3e66"
+            android:textSize="20sp"
+            android:textColor="#1e3e66"
+            android:textCursorDrawable="@null"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password" />
+
+    </RelativeLayout>
+    <com.mychauffeurapp.model.ButtonRegularText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#18AAE6"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:id="@+id/sign_up_button"
+        android:layout_gravity="center_horizontal" />
+</RelativeLayout>

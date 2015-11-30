@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mychauffeurapp" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.App_VolleyExamples"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/MyTheme" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyArHxI9UJeGOnYzrDKfAzkEL_qKwG8A1sY" />
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Booking"
+            android:parentActivityName=".activity.Booking" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Booking" />
+        </activity>
+        <activity android:name=".activity.BookingInformation" />
+        <activity
+            android:name=".activity.ForgotPassword"
+            android:label="My Chauffeur"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.OfferActivity" />
+        <activity android:name=".activity.RatingActivity" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:label="Sign Up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginScreen"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".activity.ResetPassword" />
+        <activity android:name=".activity.BookingHistory" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.DestinationMap" />
+        <activity android:name=".activity.SuccessfulActivity" />
+        <activity android:name=".activity.OTPActivity" />
+        <activity
+            android:name=".activity.BookingDetails"
+            android:label="Booking Details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyRideActivity"
+            android:label="Booking History"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ForgotPasswordOtp"
+            android:label="My Chauffeur"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:label="My Chauffeur"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Vehicle_details"
+            android:label="Vehicle Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.Book_driver_and_car"
+            android:label="My Chauffeur" >
+        </activity>
+        <activity
+            android:name=".activity.Book_driver_and_van"
+            android:label="My Chauffeur" >
+        </activity>
+        <activity
+            android:name=".activity.Vehicle_details_tab"
+            android:label="My Chauffeur" >
+        </activity>
+        <activity
+            android:name=".activity.Vehicle_types"
+            android:label="My Chauffeur"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!--
+             Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting
+        -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <activity
+            android:name=".activity.Ride_History"
+            android:label="Ride History" >
+        </activity>
+        <activity
+            android:name=".activity.ActivtionActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.mychauffeurapp.activity.Book_driver_and_car">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="true"
+        android:src="@drawable/book_drive"
+        android:layout_marginTop="25dp"/>
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Driver and Van"
+        android:padding="5dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="24dp"
+        android:textColor="#1e3e66"
+        android:gravity="center_horizontal"
+        android:textSize="35sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true">
+        <com.mychauffeurapp.model.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:id="@+id/driver_text1"
+            android:inputType="text"
+            android:background="@drawable/rectanglebox"
+            android:textColor="#1e3e66" />
+    </RelativeLayout>
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="25sp"
+        android:text="Book driver and van"
+        android:background="#00a1e4"
+        android:textColor="#ffff"
+        android:id="@+id/driver_van"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

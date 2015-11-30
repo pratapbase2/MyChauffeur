@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total cost"
+        android:textSize="19sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#00a1e4"
+        android:id="@+id/textView10"
+        android:layout_marginTop="25dp"
+        />
+
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Rs.250"
+        android:textColor="#1e3e66"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/textCost"
+        android:layout_below="@+id/textView10"
+        android:background="@drawable/rectanglebox"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--<com.mychauffeurapp.model.MyTextviews
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charges are for Rs.100 per hr"
+        android:textSize="20sp"
+        android:id="@+id/textView12"
+        android:textColor="#9a9a9a"
+        android:layout_below="@+id/textCost"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true" />-->
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip duration"
+        android:textSize="19sp"
+        android:id="@+id/textView13"
+        android:textColor="#00a1e4"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/textCost"
+        android:layout_marginTop="14dp"/>
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="4 hours and 20 minutes"
+        android:textColor="#1e3e66"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/textView13"
+        android:background="@drawable/rectanglebox"
+        android:id="@+id/textDuration" />
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00a1e4"
+        android:text="Source"
+        android:textSize="19sp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textDuration"
+        android:layout_marginTop="14dp"/>
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="L.regsis st,Beau Bassin-rose"
+        android:textColor="#1e3e66"
+        android:maxLines="3"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView15"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rectanglebox"
+        android:id="@+id/textView16" />
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00a1e4"
+            android:text="Destination"
+            android:textSize="19sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/textView17"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="14dp"/>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="L.regsis st,Beau Bassin-rose"
+            android:textColor="#1e3e66"
+            android:maxLines="3"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView17"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/rectanglebox"
+            android:id="@+id/textView18" />
+        <com.mychauffeurapp.model.MyTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Got a discount code?"
+            android:textSize="20sp"
+            android:textColor="#18aae6"
+            android:id="@+id/code"
+            android:layout_below="@+id/textView18"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Confirm "
+        android:id="@+id/button2"
+        android:textColor="#fff"
+        android:textSize="25sp"
+
+
+        android:textAllCaps="false"
+        android:background="#18aae6"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

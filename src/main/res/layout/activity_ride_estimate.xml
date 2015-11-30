@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mychauffeurapp.activity.RideEstimateActivity"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:text="From"
+            android:textSize="28sp"
+            android:textColor="#3d3d3d"
+            android:id="@+id/text_from"/>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@+id/text_from"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:id="@+id/edit_from"
+            android:background="@drawable/rectangle_box"/>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:layout_below="@+id/edit_from"
+            android:layout_marginTop="10dp"
+            android:textColor="#3d3d3d"
+            android:text="To"
+            android:textSize="28sp"
+            android:id="@+id/text_to"/>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_below="@+id/text_to"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:id="@+id/edit_to"
+            android:background="@drawable/rectangle_box"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_to"
+            android:layout_marginTop="10dp"
+            android:id="@+id/time">
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time :"
+                android:textSize="24sp"
+                android:textColor="#3d3d3d"/>
+            <com.mychauffeurapp.model.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="22sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <com.mychauffeurapp.model.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:text="Rs.30 /km"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:id="@+id/rupee"/>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rupee"
+            android:text="Travel total kilometers @ the cost"
+            android:textSize="19sp"
+            android:id="@+id/constant_txt"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/constant_txt"
+            android:layout_marginTop="20dp">
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="0.5"
+                android:id="@+id/distance"
+                android:background="@drawable/rectangle_box"/>
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="0.5"
+                android:id="@+id/distance_cost"
+                android:background="@drawable/rectangle_box"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:text="Enter"
+        android:textSize="25sp"
+        android:background="#18aae6"/>
+</RelativeLayout>

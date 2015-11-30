@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.mychauffeurapp.activity.Vehicle_types">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start"
+
+        android:padding="16dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="5dp"/>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your vehicle type"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView2"
+            android:textSize="19sp"
+            android:id="@+id/constant_txt"
+            android:textColor="#18aae6"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/constant_txt">
+
+        <!--<com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Driver and vehicle"
+            android:id="@+id/car_van"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rectanglebox"
+            android:textColor="#1e3e66"
+            />-->
+            <CheckBox android:id="@+id/car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="  Car"
+                android:button="@drawable/vehicle_det"
+                android:textColor="#1e3e66"/>
+            <!--<com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:id="@+id/vcar"
+                android:textSize="22sp"
+                android:textColor="#1e3e66"
+                android:layout_toRightOf="@+id/car"
+                />-->
+
+            <CheckBox android:id="@+id/van"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="  Van"
+                android:button="@drawable/vehicle_det"
+                android:textSize="22sp"
+                android:textColor="#1e3e66"
+                />
+            <!--<com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Book van"
+                android:layout_below="@+id/vcar"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:textColor="#1e3e66"
+                android:layout_toRightOf="@+id/van"
+                />-->
+
+        </LinearLayout>
+
+        <com.mychauffeurapp.model.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linear"
+            android:textColorHint="#18aae6"
+            android:imeOptions="actionDone"
+            android:minLines="3"
+            android:hint="Please enter more details about the type of vehicle and the number of passengers"
+            android:id="@+id/driver_text"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@null"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectanglebox"
+            android:scrollbars="vertical"
+            android:textColor="#1e3e66"
+            /><requestFocus/>
+
+       <!-- <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driver_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#1e3e66"
+            android:id="@+id/requestquote"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text=""/>-->
+        <!--<com.mychauffeurapp.model.ButtonText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Book driver and car"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:id="@+id/car"
+            android:background="#18aae6"
+            />
+        <com.mychauffeurapp.model.ButtonText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/car"
+            android:text="Book driver and van"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:id="@+id/van"
+            android:background="#18aae6"
+            />-->
+
+    </RelativeLayout>
+    </ScrollView>
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="25sp"
+        android:text="Request for a quote"
+        android:background="#00a1e4"
+        android:textColor="#ffff"
+        android:id="@+id/driver_car"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

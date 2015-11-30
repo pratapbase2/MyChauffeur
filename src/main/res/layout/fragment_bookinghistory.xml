@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView11"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/b"/>
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:text="Booking History"
+        android:textSize="25sp"
+        android:textColor="#808080"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/imageView11"
+        />
+
+</RelativeLayout>

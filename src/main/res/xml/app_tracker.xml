@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <string name="ga_trackingId">UA-70487882-1</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+    <screenName name="com.mychauffeurapp.activity.MainActivity">Main Activity</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.LoginScreen">Login Screen</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.Booking">Booking</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.BookingDetails">Booking Details</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.BookingHistory">Booking History</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.BookingInformation">Booking Information</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.DestinationMap">Destination Map</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.ForgotPassword">Forgot Password</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.ForgotPasswordOtp">Forgot Password OTP</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.OfferActivity">Coupon code Activity</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.OTPActivity">SignUp OTP </screenName>
+
+    <screenName name="com.mychauffeurapp.activity.ResetPassword">Reset Password</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.SignUpActivity">Signup Activity</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.SplashScreen">Splash screen</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.Vehicle_details">Vehicle details</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.Vehicle_types">Vehicle Types</screenName>
+
+    <screenName name="com.mychauffeurapp.activity.Vehicle_details_tab">Vehicle Tabview</screenName>
+
+</resources>

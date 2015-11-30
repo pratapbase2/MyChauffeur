@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:mode="twoLine"
+    android:background="#ffffff">
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:layout_marginLeft="10dp"
+        android:textColor="#1e3e66"
+        android:textSize="11sp"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textAlignment="viewStart"
+        />
+
+    <com.mychauffeurapp.model.MyTextviews
+    android:id="@android:id/text2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#1e3e66"
+    android:textSize="20sp"
+    android:layout_below="@android:id/text1"
+    android:layout_alignStart="@android:id/text1"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textAlignment="viewStart"
+        />
+</TwoLineListItem>

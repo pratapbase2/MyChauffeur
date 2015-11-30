@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Mychauffeur App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <string-array name="nav_drawer_items">
+
+         <item>Book a Driver</item>
+         <!--AB <item>User Profile</item>-->
+         <item>Booking history</item>
+        <item>Logout</item>
+        <!-- <item>Invite and Earn</item>-->
+         <!--<item>Reviews and Ratings</item>-->
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/book_drive</item>
+       <!-- <item>@drawable/usericons</item>-->
+        <item>@drawable/booking_history</item>
+        <item>@drawable/logout</item>
+       <!-- <item>@drawable/earn</item>-->
+        <!--<item>@drawable/sa</item>-->
+    </array>
+    <string name="logout">Logout</string>
+
+   <!-- <string name="autocomplete_hint">Enter place name or address</string>
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;</string>
+    -->
+    <string name="place_details">%1$s&lt;br/&gt;%2$s&lt;br/&gt;</string>
+    <string name="title_activity_vehicle_details">Vehicle_details</string>
+    <string name="title_activity_book_driver_and_car">Book_driver_and_car</string>
+    <string name="title_activity_book_driver_and_van">Book_driver_and_van</string>
+    <string name="title_activity_vehicle_details_tab">Vehicle_details_tab</string>
+    <string name="title_activity_vehicle_types">Vehicle_types</string>
+    <string name="title_activity_google_analytics_main">Google_analytics_main</string>
+   <!-- <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;%2$s&lt;/i&gt;&lt;br/&gt;</string>-->
+
+    <!--Google Analytics
+        <string name="app_name">Google Analytics</string>
+        <string name="action_settings">Settings</string>-->
+
+        <string name="title_activity_second">Second Activity</string>
+        <string name="toast_track_exception">Exception is recorded. Check the Crashes and Exceptions on Google Dashboard!</string>
+        <string name="toast_app_crash">The app will crash now! Check the Crashes and Exceptions on Google Dashboard!</string>
+        <string name="fragment_footer">Fragment is loaded! Check the screen view on Google Analytics Dashboard.</string>
+        <string name="msg_instructions">Click on each button to see the appropriate tracking on Google Analytics</string>
+        <string name="btn_second_screen">Second Screen</string>
+        <string name="btn_send_event">Track Event</string>
+        <string name="btn_exception_tracking">Track Exception</string>
+        <string name="btn_app_crash">Track App Crash</string>
+        <string name="btn_load_fragment">Fragment Tracking</string>
+    <string name="title_activity_ride__history">Ride_History</string>
+
+</resources>

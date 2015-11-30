@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <com.mychauffeurapp.model.MyEditTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:textColorHint="#00a1e4"
+        android:textCursorDrawable="@null"
+        android:textColor="#00a1e4"
+        android:textSize="23sp"
+        android:ems="10"
+        android:id="@+id/et_em" />
+
+
+    <!--<com.mychauffeurapp.model.MyTextviews
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#1e3e66"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/et_em"
+        android:layout_alignLeft="@+id/et_em"
+        android:layout_alignStart="@+id/et_em" />-->
+
+    <com.mychauffeurapp.model.MyEditTextView
+        android:id="@+id/et_otp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/et_em"
+        android:textCursorDrawable="@null"
+        android:textSize="22sp"
+        android:hint="Please Enter Your OTP"
+        android:textColorHint="#00a1e4"
+        android:padding="10dp"
+        android:textColor="#00a1e4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Verify your account"
+        android:textSize="25dp"
+        android:background="#18aae6"
+        android:id="@+id/btn_submit"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"/>
+
+</RelativeLayout>

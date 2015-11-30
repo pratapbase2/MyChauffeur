@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView8"
+        android:src="@drawable/driver2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VENKATG"
+        android:textSize="25sp"
+        android:textColor="#3d3d3d"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView8"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tl1"
+        android:layout_below="@+id/name">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:weightSum="10">
+
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/dirc"
+                android:layout_weight="0" />
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3d3d3d"
+                android:text="The Address Boutique Hotel,
+Port Chambly, Terre Rouge, Mauritius"
+                android:id="@+id/address"
+                android:textSize="15dp"
+                android:layout_weight="9"
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:weightSum="10">
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/car"
+                android:layout_weight="1"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6411 FB06 "
+                android:textSize="15dp"
+                android:textColor="#3d3d3d"
+                android:id="@+id/textView3"
+                android:layout_weight="9"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:weightSum="10">
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/mailbox"
+                android:layout_weight="1"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin@gmail.com"
+                android:textSize="15dp"
+                android:textColor="#3d3d3d"
+                android:id="@+id/email_id"
+                android:layout_weight="9"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:weightSum="10">
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/imageView6"
+                android:src="@drawable/phone"
+                android:layout_weight="1"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0987654321"
+                android:textSize="15dp"
+                android:id="@+id/phone_number"
+                android:textColor="#3d3d3d"
+                android:layout_weight="9"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:weightSum="10">
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/imageView7"
+                android:src="@drawable/pin"
+                android:layout_weight="2"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java developer "
+                android:textSize="15dp"
+                android:id="@+id/textView6"
+                android:textColor="#3d3d3d"
+                android:layout_weight="9"
+                />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+    </RelativeLayout>
+</ScrollView>

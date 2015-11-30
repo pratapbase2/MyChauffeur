@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply your promocode here"
+        android:textColor="#18aae6"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView8" />
+
+
+    <com.mychauffeurapp.model.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1e3e66"
+        android:textSize="25sp"
+        android:textCursorDrawable="@null"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:layout_below="@+id/textView8"
+        android:background="@drawable/rectanglebox"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/couponCode"
+        android:textColorHint="#1e3e66"
+        android:hint="Enter coupon code" />
+
+
+
+
+
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Apply coupon"
+        android:textColor="#fff"
+        android:id="@+id/apply"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#18aae6"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

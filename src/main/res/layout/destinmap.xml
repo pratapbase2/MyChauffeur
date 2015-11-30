@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="beforeDescendants"
+    android:id="@+id/rl11">
+    <!--<ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp">-->
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!--<SearchView
+                    android:id="@+id/searchboxbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="10dp"
+                    android:background="#fff"
+                    android:layout_alignTop="@+id/map"
+                    android:hint="Search the Address"
+                    android:inputType="text" />-->
+
+                <fragment
+                    android:id="@+id/destinationmap"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:name="com.google.android.gms.maps.MapFragment"/>
+
+                <com.mychauffeurapp.model.MyAutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewDest"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="60dp"
+                    android:ems="10"
+                    android:background="@android:color/white"
+                    android:textColor="#1e3e66"
+                    android:text=""
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:popupBackground="#18AAE6"
+                    android:textCursorDrawable="@null"
+                    android:hint="Please enter your drop location">
+
+                    <requestFocus />
+                </com.mychauffeurapp.model.MyAutoCompleteTextView>
+
+                <!--
+                                <EditText
+                                    android:id="@+id/searchbox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="43dp"
+                                    android:layout_marginTop="17dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="65dp"
+                                    android:padding="10dp"
+                                    android:hint="Select destination address"
+                                    android:background="#fff"
+                                    android:textColor="#000"
+                                    android:paddingRight="56dp"
+                                    android:layout_alignTop="@+id/destinationmap"
+                                    android:inputType="text"
+                                    />
+                -->
+
+                <ImageButton
+                    android:id="@+id/clearbtn"
+                    android:layout_width="45dp"
+                    android:layout_height="43dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="4dp"
+                    android:src="@drawable/clear"
+                    android:background="#fff"
+                    android:scaleType="fitXY"
+                    android:layout_alignTop="@+id/autoCompleteTextViewDest"
+                    android:layout_alignParentRight="true" />
+
+                <!--<ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:id="@+id/imageView12"
+                    android:background="@drawable/gm"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />-->
+
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/destinationmap"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/rl12">
+
+                    <com.mychauffeurapp.model.MyTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drop location"
+                        android:textSize="22dp"
+                        android:id="@+id/textView27"
+                        android:textColor="#18AAE6"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView27"
+                        android:layout_marginTop="5dp">
+
+                        <com.mychauffeurapp.model.MyTextviews
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/addressText"
+                            android:textSize="15dp"
+                            android:textColor="#1e3e66"
+                            android:layout_margin="5dp"
+                            />
+                        <TextView
+                            android:id="@+id/place_attribution"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoLink="all"
+                            android:text=""
+                            android:textColor="#3d3d3d"
+                            android:paddingTop="16dp"
+                            android:inputType="text"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <!--<RelativeLayout
+                            android:id="@+id/wrongAddressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:background="@drawable/rectanglebox"
+                            android:layout_margin="15dp"
+                            android:layout_below="@+id/textView27"
+                            android:layout_toRightOf="@+id/sourceAddressText"
+                            android:layout_toEndOf="@+id/sourceAddressText"
+                            >
+                            &lt;!&ndash;<com.mychauffeurapp.model.MyTextviews
+                                android:layout_width="wrap_content"
+                                android:layout_height="45dp"
+                                android:textSize="16sp"
+                                android:id="@+id/textView37"
+                                android:gravity="center"
+                                android:textColor="#18AAE6" />&ndash;&gt;
+
+                            <com.mychauffeurapp.model.MyTextviews
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Wrong address ?"
+                                android:id="@+id/textView35"
+                                android:textColor="#18AAE6"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:layout_alignParentRight="true"/>
+
+                            <com.mychauffeurapp.model.MyTextviews
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" Enter manually"
+                                android:id="@+id/textView41"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:layout_below="@+id/textView35"
+                                android:layout_alignParentRight="true"
+                                />
+
+
+                        </RelativeLayout>-->
+                    </RelativeLayout>
+
+                    <!--<com.mychauffeurapp.model.MyTextviews
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your nearest driver 18 minutes away"
+                        android:textSize="20sp"
+                        android:id="@+id/textView38"
+                        android:layout_marginTop="160dp"
+                        android:gravity="center" />
+                        &lt;!&ndash;android:layout_above="@+id/linearLayout"&ndash;&gt;-->
+
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="1"
+                        android:background="#d3d3d3"
+                        android:id="@+id/linearLayout"
+                        android:layout_marginTop="24dp"
+                        android:layout_below="@+id/textView38"
+                       >
+                    <com.mychauffeurapp.model.MyTextviews
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ETA 18 mins"
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView39"
+                        android:textSize="20dp"
+                        android:background="#d3d3d3"
+                        android:layout_weight="0.5"
+                        android:textColor="#000"
+                         />
+
+                        <com.mychauffeurapp.model.MyTextviews
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ride estimate"
+                        android:textSize="20dp"
+                            android:layout_gravity="center"
+                        android:id="@+id/textView40"
+                        android:textColor="#000"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignTop="@+id/textView39"
+                        android:layout_alignLeft="@+id/textView37"
+                        android:layout_alignStart="@+id/textView37" />
+                    </LinearLayout>-->
+
+                </RelativeLayout>
+
+
+
+
+                <!--<ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/route_rht"
+                    android:background="@drawable/drive_car"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="265dp"
+                    android:layout_alignParentRight="true" />-->
+
+                <!--<com.mychauffeurapp.model.MyTextviews
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:text=" GO"
+                    android:textSize="20sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="285dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"/>-->
+            </RelativeLayout>
+        </RelativeLayout>
+    <!--</ScrollView>-->
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Proceed to booking"
+        android:id="@+id/book"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:background="#18AAE6"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

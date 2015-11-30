@@ -1,0 +1,373 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.mychauffeurapp.activity.BookingDetails">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_container1">
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:id="@+id/layout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:src="@drawable/details_image"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lbl_id">
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking ID"
+                android:textColor="#18AAE6"
+                android:textSize="18sp"
+                android:layout_weight="0.2"/>
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#18AAE6"
+                android:textSize="18sp"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_id"
+            android:id="@+id/lbl_2">
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_id"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/booking_id"
+                android:text="MAU345689"
+                android:textColor="#1e3e66"
+                android:layout_weight="0.5"
+                android:textSize="22sp"/>
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/icon"
+                android:text="Completed"
+                android:layout_marginTop="5dp"
+                android:textColor="#1e3e66"
+                android:id="@+id/status"
+                android:layout_weight="0.5"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_bar"
+            android:layout_below="@+id/lbl_2"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:id="@+id/line1"/>
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup point"
+            android:textColor="#18AAE6"
+            android:textSize="18sp"
+            android:layout_below="@+id/line1"
+            android:id="@+id/pick_up"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pick_up"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linearLayout1">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/marker"
+                android:layout_marginTop="3dp"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/src_address"
+                android:text="Riviere du Rempart swimming pool,\n A6,Rivere de Rempart,Mauritius\n,Rivere de Rempart,Mauritius"
+                android:textSize="16sp"
+                android:textColor="#1e3e66"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"/>
+
+        </LinearLayout>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop point"
+            android:textColor="#18AAE6"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/linearLayout1"
+            android:id="@+id/drop_point"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drop_point"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linearLayout3">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/marker"
+                android:layout_marginTop="5dp"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dest_address"
+                android:text="Riviere du Rempart swimming pool,\n A6,Rivere de\n Rempart,Mauritius"
+                android:textSize="16sp"
+                android:textColor="#1e3e66"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="3dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/clock"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp">
+                <com.mychauffeurapp.model.MyTextviews
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:text="2 Hours"
+                    android:gravity="center"
+                    android:textColor="#1e3e66"
+                    android:textSize="17sp" />
+                <com.mychauffeurapp.model.MyTextviews
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" on 03 Nov,2015"
+                    android:textColor="#1e3e66"
+                    android:id="@+id/date"
+                    android:textSize="17sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_bar"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_below="@+id/linearLayout2"
+            android:id="@+id/line2"/>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:id="@+id/ride_details"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp">
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:id="@+id/distance_lbl"
+                android:layout_marginLeft="20dp"
+                android:textColor="#18AAE6"
+                android:text="Ride Distance" />
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distance"
+                android:layout_below="@+id/distance_lbl"
+                android:textSize="22sp"
+                android:textColor="#3d3d3d"
+                android:layout_marginTop="5dp"
+                android:text="50.5"
+                android:layout_marginLeft="50dp"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#18AAE6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="Total Time"
+                android:id="@+id/time_lbl"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hours"
+                android:layout_below="@+id/time_lbl"
+                android:textSize="22sp"
+                android:textColor="#3d3d3d"
+                android:layout_marginTop="5dp"
+                android:text="12:30 Hours"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/border"
+            android:layout_below="@+id/ride_details"
+            android:id="@+id/line3"/>
+    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_paid"
+            android:layout_below="@+id/line2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total cost"
+                android:textColor="#18AAE6"
+                android:id="@+id/bill_lbl"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                />
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final cost"
+                android:textSize="18sp"
+                android:id="@+id/paid"
+                android:textColor="#18AAE6"
+                android:layout_weight="0.5"
+                android:layout_toRightOf="@+id/bill_lbl"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You save"
+                android:textColor="#18AAE6"
+                android:layout_weight="0.5"
+                android:id="@+id/constant_txt"
+                android:textSize="18sp"/>
+
+            <!--<com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rupee"
+                android:text="Rs. "
+                android:textSize="22sp"
+                android:layout_below="@+id/paid"
+                android:layout_toLeftOf="@+id/save_amount" />-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_paid"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cost_layout"
+            android:layout_marginLeft="10dp">
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/actual_cost"
+                android:text="Rs. 580"
+                android:textColor="#1e3e66"
+                android:textSize="20sp"
+                android:layout_weight="0.5" />
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/final_cost"
+                android:text="Rs. 480"
+                android:textSize="20sp"
+                android:textColor="#1e3e66"
+                android:layout_weight="0.5"
+                />
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/discount_amount"
+                android:text="Rs. 100"
+                android:textSize="20sp"
+                android:textColor="#1e3e66"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+        <!--<com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating_txt"
+            android:text="Rating"
+            android:textColor="#18AAE6"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/cost_layout"/>
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating_value"
+            android:textColor="#1e3e66"
+            android:textSize="20sp"
+            android:text="23"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cost_layout"
+            android:layout_toRightOf="@+id/rating_txt"
+            android:layout_toEndOf="@+id/rating_txt"
+            android:layout_marginLeft="10dp"
+            />-->
+    </RelativeLayout>
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Submit rating"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:enabled="false"
+        android:background="#00a1e4"
+        android:id="@+id/rating"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

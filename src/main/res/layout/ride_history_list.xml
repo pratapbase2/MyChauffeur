@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dip"
+        android:padding="10dp"
+        android:descendantFocusability="afterDescendants"
+        android:background="#fff">
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/driver_icon"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/icon"
+            android:scaleType="fitXY" />
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:layout_below="@+id/icon"
+            android:text="Completed"
+            android:textSize="15sp"
+            android:textColor="#1e3e66"
+            android:layout_marginTop="14dp"
+            android:layout_centerVertical="true"/>
+
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Id"
+            android:textSize="17dp"
+            android:textColor="#18AAE6"
+            android:id="@+id/bid"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+        />
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Booking Id"
+            android:id="@+id/unique_id"
+            android:textColor="#1e3e66"
+            android:textSize="20sp"/>
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_below="@+id/unique_id"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"
+            android:text="Cost"
+            android:id="@+id/cost_txt"
+            android:textColor="#18AAE6"
+            android:textSize="17sp"/>
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cost_txt"
+            android:layout_below="@+id/unique_id"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="8dp"
+            android:text="cost"
+            android:id="@+id/cost"
+            android:textColor="#1e3e66"
+            android:textSize="20sp"/>
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_below="@+id/cost_txt"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:text="Date"
+            android:id="@+id/date_txt"
+            android:textColor="#18AAE6"
+            android:textSize="17sp"/>
+        <com.mychauffeurapp.model.MyTextviews
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/date_txt"
+            android:layout_below="@+id/cost"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="8dp"
+            android:text="date"
+            android:id="@+id/date"
+            android:textColor="#1e3e66"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</LinearLayout>

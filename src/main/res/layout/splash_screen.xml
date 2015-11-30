@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <!--android:background="@drawable/myc_splash_v2"-->
+ <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/myc_splash_v2"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView2"
+        android:src="@drawable/spalsh_myc_v4"/>
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/start"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logowtext"/>-->
+
+    <!--<com.mychauffeurapp.model.MyTextviews
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:text="Get on demand drivers\non tap of a button"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:layout_above="@+id/start"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>-->
+
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp">
+        <com.mychauffeurapp.model.ButtonText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Book driver and car"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:id="@+id/car"
+            android:background="#18aae6"
+            />
+        <com.mychauffeurapp.model.ButtonText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/car"
+            android:text="Book driver and van"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:id="@+id/van"
+            android:background="#18aae6"
+            />
+
+    </RelativeLayout>-->
+
+    <com.mychauffeurapp.model.ButtonText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Book myChauffeur Now !"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:id="@+id/start"
+        android:background="#18aae6"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

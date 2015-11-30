@@ -1,0 +1,48 @@
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/drawer_layout"
+android:background="#ffffff"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- Framelayout to display Fragments -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <!-- Listview to display slider menu -->
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="100dp"
+        android:layout_height="133dp"
+        android:background="@drawable/details_image"
+        android:layout_centerInParent="true"/>
+
+        <com.mychauffeurapp.model.MyTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1e3e66"
+            android:layout_below="@+id/image_view"
+            android:text="Support : mychauffeur@rht.mu"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.mychauffeurapp.activity.Vehicle_details">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:id="@+id/relativeLayout3">
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Number"
+                android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:textColor="#00a1e4"
+                android:id="@+id/regnum_txt"/>
+
+            <com.mychauffeurapp.model.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/regnum_txt"
+                android:id="@+id/reg_num"
+                android:padding="10dp"
+                android:hint="Registration Number"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="22sp"
+                android:maxLength="8"
+                android:inputType="text"
+                android:textCursorDrawable="@null"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectanglebox"
+                android:textColorHint="#1e3e66"
+                android:textColor="#1e3e66" />
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make of Car/ Van"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/reg_num"
+                android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:textColor="#00a1e4"
+                android:id="@+id/moc_txt"/>
+
+           <!-- <com.mychauffeurapp.model.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/make_of_car"
+                android:hint="Make of car"
+                android:textSize="22sp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@drawable/rectanglebox"
+                android:imeOptions="actionDone"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/moc_txt"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#1e3e66"
+                android:singleLine="true"
+                android:textColor="#1e3e66" />
+-->
+            <com.mychauffeurapp.model.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/make_of_car"
+                android:hint="Make of Car/ Van"
+                android:inputType="text"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/rectanglebox"
+                android:layout_below="@+id/moc_txt"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#1e3e66"
+                android:singleLine="true"
+                android:textColor="#1e3e66" />
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age of Vehicle in Years"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/make_of_car"
+                android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:textColor="#00a1e4"
+                android:id="@+id/vage"/>
+
+            <com.mychauffeurapp.model.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/age_of_vehicle"
+                android:hint="Age of vehicle"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:background="@drawable/rectanglebox"
+                android:maxLength="2"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/vage"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#1e3e66"
+                android:textColor="#1e3e66"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of insurance"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/age_of_vehicle"
+                android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:textColor="#00a1e4"
+                android:id="@+id/type"/>
+
+            <com.mychauffeurapp.model.MyTextviewBlack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_of_insurance"
+                android:text="Comprehensive"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:background="@drawable/rectanglebox"
+                android:textCursorDrawable="@null"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/type"
+                android:textColorHint="#1e3e66"
+                android:textColor="#1e3e66"/>
+
+            <!--<com.mychauffeurapp.model.MyTextviews
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age of Vehicle"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/type_of_insurance"
+                android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:textColor="#00a1e4"
+                android:id="@+id/vage"/>
+
+            <com.mychauffeurapp.model.MyTextviews
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/age_of_vehicle"
+                android:hint="Age of vehicle"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:background="@drawable/rectanglebox"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:layout_below="@+id/vage"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#1e3e66"
+                android:textColor="#1e3e66"/>-->
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true">
+        <com.mychauffeurapp.model.ButtonText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Proceed to Booking"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:id="@+id/proceed"
+            android:textColor="#fff"
+            android:background="#18aae6"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

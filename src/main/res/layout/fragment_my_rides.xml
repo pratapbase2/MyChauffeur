@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mychauffeurapp.activity.MyRideActivity"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/myride"
+        android:background="#1e3e66">
+    <com.mychauffeurapp.model.MyTextviews
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Booking history"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/card_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/myride"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#000"
+        android:dividerHeight="1dp"
+        android:background="#fff"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>
